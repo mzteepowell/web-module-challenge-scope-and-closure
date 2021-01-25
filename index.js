@@ -28,11 +28,15 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+    A: Both functions accomplishes the same objective but counter2 is more efficient and uses less memory
+
   2. Which of the two uses a closure? How can you tell?
-  
-  3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+    A: counter1 is a closure because it is a reference to of counter() while the inner function 
+    maintains its reference lexical environment
+
+  3. In what scenario would the counter1 code be preferable? A: When you want to restrict access to code or manage a global namespace. 
+  In what scenario would counter2 be better? A: counter2 would be more preferable when closures are not needed.
+
 */
 
 // counter1 code
